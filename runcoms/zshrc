@@ -11,3 +11,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+autoload -Uz promptinit
+promptinit
+prompt pure
+
+export EDITOR=nvim VISUAL=nvim
+path+=("$HOME/.local/bin")
+export PATH

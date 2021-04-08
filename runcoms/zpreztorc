@@ -38,7 +38,8 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
-  'prompt'
+  'prompt' \
+  'git'
 
 #
 # Autosuggestions
@@ -60,10 +61,10 @@ zstyle ':prezto:load' pmodule \
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' key-bindings 'emacs'
+zstyle ':prezto:module:editor' key-bindings 'vi'
 
 # Auto convert .... to ../..
-# zstyle ':prezto:module:editor' dot-expansion 'yes'
+zstyle ':prezto:module:editor' dot-expansion 'yes'
 
 # Allow the zsh prompt context to be shown.
 #zstyle ':prezto:module:editor' ps-context 'yes'
@@ -206,7 +207,7 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 #
 
 # Auto start a session when Zsh is launched in a local terminal.
-# zstyle ':prezto:module:tmux:auto-start' local 'yes'
+zstyle ':prezto:module:tmux:auto-start' local 'yes'
 
 # Auto start a session when Zsh is launched in a SSH connection.
 # zstyle ':prezto:module:tmux:auto-start' remote 'yes'
@@ -224,4 +225,4 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 # Enabled safe options. This aliases cp, ln, mv and rm so that they prompt
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
-# zstyle ':prezto:module:utility' safe-ops 'yes'
+zstyle ':prezto:module:utility' safe-ops 'yes'
